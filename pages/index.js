@@ -1,19 +1,21 @@
 import Head from "next/head";
 import Header from "./components/Header";
-import Form from "./components/Form";
-import CookieStand from "./components/CookieStand";
+import Main from "./components/Main";
+
 import Footer from "./components/Footer";
-// import { useState } from "react";
+import { useState } from "react";
 
 function Home(){  
+// const [reply, setReply] = useState("Information will appear when you create a Cookie Stand!")
+//   const form = document.getElementById('form');
+//   form.addEventListener('submit', callbackFunction);
   return(
     <>
     <Head>
       <title>Cookie Stand Admin</title>
     </Head>
       <Header/>
-      <Form/>
-      <CookieStand/>
+      <Main />
       <Footer/>
     </>
   )
